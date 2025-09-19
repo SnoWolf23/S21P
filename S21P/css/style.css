@@ -1,0 +1,191 @@
+/* STILI GENERALI */
+
+/* NAVBAR */
+
+.NAVBAR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    background-color: #FF7517; 
+}
+
+.NAVBAR img {
+    position: absolute;
+    left: 10px;
+    border-radius: 20%;
+    width: 50px;
+    height: 50px;
+}
+
+.NAVBAR .TABS {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.NAVBAR .TABS a{
+    align-items: center;
+    color: #2C2727;
+    /* color: #3E3939; */
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.NAVBAR .TABS a:hover {
+    border-radius: 5px;
+    color: #564f4f;
+}
+
+
+/* HOME */
+.home_body{
+    background-color: #2C2727;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+
+
+
+/* Hero (immagine grande) */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3rem; /* display-3 in Bootstrap */
+}
+
+/* Sezione testo + immagine */
+#intro {
+  padding: 5rem 0;
+  color: white;
+}
+
+#intro h2 {
+  margin-bottom: 1rem;
+}
+
+#intro img {
+  border-radius: 0.5rem; /* equivalente a .rounded */
+}
+
+
+.col-md-6 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Sezione Tabs */
+#info {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#info .nav-tabs {
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#info .tab-content {
+  text-align: center;
+  color: white;
+}
+
+#info .tab-content img{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+  filter: invert(1);
+}
+
+
+.my-btn {
+    background-color: #564f4f; /* colore di sfondo */
+    border-color: white;
+    color: #FF7517;               /* testo */
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.my-btn:hover {
+  background-color: transparent; /* colore hover */
+  color: #FF7517;
+}   
+
+/* Colore del testo dei tab */
+.nav-tabs .nav-link {
+  color: #fff;              /* colore base (non attivo) */
+}
+
+/* Colore del testo quando ci passi sopra */
+.nav-tabs .nav-link:hover {
+  color: #FF7517;           /* colore hover */
+}
+
+/* Tab attivo */
+.nav-tabs .nav-link.active {
+  color: #FF7517;           /* colore testo attivo */
+  background-color: transparent;  /* sfondo trasparente (o personalizzalo) */
+}
+
+/* Widget google maps */
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;   /* larghezza massima del widget */
+  margin: 16px auto;  /* auto centra orizzontalmente */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 200px;      /* puoi modificare l’altezza */
+  border: none;
+  display: block;
+}
+
+
+.privacy-link {
+  text-align: left;     /* testo allineato a sinistra */
+  margin: 10px 15px;    /* spazio sopra e ai lati */
+  font-size: 0.85rem;
+}
+
+.privacy-link a {
+  color: #FF7517;       /* colore evidenziato */
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.privacy-link a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+
+.privacy-container {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+  color: white;
+}
+
+.privacy-container a {
+  color: #FF7517;
+}

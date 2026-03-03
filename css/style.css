@@ -8,7 +8,7 @@
     align-items: center;
     padding: 10px;
     position: relative;
-    background-color: #FF7517; 
+    background-color: #FF9B51; 
 }
 
 .NAVBAR img {
@@ -27,7 +27,7 @@
 
 .NAVBAR .TABS a{
     align-items: center;
-    color: #2C2727;
+    color: #25343F;
     /* color: #3E3939; */
     text-decoration: none;
     padding: 10px;
@@ -43,7 +43,7 @@
 
 /* HOME */
 .home_body{
-    background-color: #2C2727;
+    background-color: #BFC9D1;
     text-align: center;
     overflow-x: hidden;
 }
@@ -52,6 +52,50 @@
 
 
 /* Hero (immagine grande) */
+
+/* --- INIZIO STILI HERO VIDEO --- */
+
+/* Video di sfondo (Nascosto di default su mobile) */
+.hero-video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none; /* Non serve su mobile */
+  z-index: 0;    /* Mettiamolo dietro */
+}
+
+/* Video principale in primo piano */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #BFC9D1; /* Sfondo di fallback per mobile */
+  z-index: 1;                /* Mettiamolo davanti */
+}
+
+@media (min-width: 768px) {
+  /* Su desktop mostra il video di sfondo e applica la sfocatura */
+  .hero-video-bg {
+    display: block;
+    filter: blur(25px) brightness(0.8); /* Sfoca e scurisce leggermente per far risaltare il video avanti */
+    transform: scale(1.1); /* Lo "zooma" leggermente per evitare bordi sbiaditi dovuti al blur */
+  }
+  
+  /* Su desktop il video principale non viene tagliato */
+  .hero-video {
+    object-fit: contain;
+    background-color: transparent; /* TRASPARENTE: Fondamentale per vedere lo sfondo sfocato dietro! */
+  }
+}
+
+/* --- FINE STILI HERO VIDEO --- */
+
 #hero {
   height: 100vh;
   display: flex;
@@ -59,16 +103,10 @@
   justify-content: center;
 }
 
-#hero h1 {
-  color: #fff;
-  font-weight: bold;
-  font-size: 3rem; /* display-3 in Bootstrap */
-}
-
 /* Sezione testo + immagine */
 #intro {
   padding: 5rem 0;
-  color: white;
+  color: #25343F;
 }
 
 #intro h2 {
@@ -98,7 +136,7 @@
 
 #info .tab-content {
   text-align: center;
-  color: white;
+  color: #25343F;
 }
 
 #info .tab-content img{
@@ -111,9 +149,9 @@
 
 
 .my-btn {
-    background-color: #564f4f; /* colore di sfondo */
+    background-color: #25343F; /* colore di sfondo */
     border-color: white;
-    color: #FF7517;               /* testo */
+    color: #FF9B51;               /* testo */
     padding: 10px;
     font-weight: bold;
     border-radius: 10px;
@@ -121,22 +159,22 @@
 
 .my-btn:hover {
   background-color: transparent; /* colore hover */
-  color: #FF7517;
+  color: #FF9B51;
 }   
 
 /* Colore del testo dei tab */
 .nav-tabs .nav-link {
-  color: #fff;              /* colore base (non attivo) */
+  color: #25343F;              /* colore base (non attivo) */
 }
 
 /* Colore del testo quando ci passi sopra */
 .nav-tabs .nav-link:hover {
-  color: #FF7517;           /* colore hover */
+  color: #FF9B51;           /* colore hover */
 }
 
 /* Tab attivo */
 .nav-tabs .nav-link.active {
-  color: #FF7517;           /* colore testo attivo */
+  color: #FF9B51;           /* colore testo attivo */
   background-color: transparent;  /* sfondo trasparente (o personalizzalo) */
 }
 
@@ -166,7 +204,7 @@
 }
 
 .privacy-link a {
-  color: #FF7517;       /* colore evidenziato */
+  color: #FF9B51;       /* colore evidenziato */
   text-decoration: none;
   opacity: 0.8;
   transition: opacity 0.2s ease;
@@ -183,9 +221,9 @@
   margin-left: 20px;
   margin-right: 20px;
   text-align: left;
-  color: white;
+  color: black;
 }
 
 .privacy-container a {
-  color: #FF7517;
+  color: #FF9B51;
 }
